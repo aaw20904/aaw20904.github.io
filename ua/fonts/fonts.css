@@ -1,0 +1,85 @@
+/* ubuntu-regular - latin_cyrillic */
+@font-face {
+     font-family: 'Ubuntu';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/ubuntu-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/ubuntu-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/ubuntu-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/ubuntu-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/ubuntu-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/ubuntu-v15-latin_cyrillic-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
+   }
+   
+   /* caveat-regular - latin_cyrillic */
+@font-face {
+     font-family: 'Caveat';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/caveat-v10-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/caveat-v10-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/caveat-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/caveat-v10-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/caveat-v10-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/caveat-v10-latin_cyrillic-regular.svg#Caveat') format('svg'); /* Legacy iOS */
+   }
+
+   /* lobster-regular - latin_cyrillic */
+@font-face {
+     font-family: 'Lobster';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/lobster-v23-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/lobster-v23-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/lobster-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/lobster-v23-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/lobster-v23-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/lobster-v23-latin_cyrillic-regular.svg#Lobster') format('svg'); /* Legacy iOS */
+   }
+   
+   /* inter-regular - latin_cyrillic */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/inter-v3-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/inter-v3-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/inter-v3-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/inter-v3-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/inter-v3-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/inter-v3-latin_cyrillic-regular.svg#Inter') format('svg'); /* Legacy iOS */
+   }
+   
+  /*olive*/
+   .goldenrod-color{
+     color:#808000;
+     }
+     /*salmon*/
+     .coral-color{
+        color:#FA8072;
+        }
+     /*forest green*/
+      .lime-green-color{
+        color:#228B22;
+     }
+     
+     .dark-orchid-color{
+        color:#483D8B;
+      }
+     /*chocolate*/
+     .dark-orange-color{
+        color:#D2691E;
+     }
+     /*royal blue*/
+     .dagen-blue-color{
+        color:#4169E1;
+     }
+     
+     .dark-green-color{
+        color:darkgreen
+     }
+     

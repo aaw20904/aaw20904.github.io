@@ -1,0 +1,428 @@
+*, *:before {
+  box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   overflow-x: hidden;
+   
+}
+
+header {
+    
+   max-width:99.9%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-flow: row nowrap;
+}
+
+.navMnu {
+ display:flex;
+ flex-flow: row nowrap; 
+ justify-content: center;
+
+ margin:1em 2em 1em 0;
+}
+
+.links:nth-child(2){
+   text-decoration: underline;
+}
+
+.links {
+    margin:0 1em 0 1em;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color:#0E442F;
+    font-size:1.3em;
+    cursor:pointer;
+}
+
+.links:hover{
+   color:chocolate;
+   text-decoration: underline;
+}
+
+.pageClass{
+   display: block;
+   margin-left: 0;
+   max-width:99.9%;
+
+
+}
+
+.container{
+    display: block;
+}
+
+
+
+/***************************
+HERo SeECTION **/
+article.cnt1{
+    margin-top:4vw;
+}
+section.hero{
+    width: 100vw;
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+.slogan{
+ padding-left:7vw;
+ margin-top:1vw;
+ font-family: 'Lobster', cursive;
+ font-size:5.6vw;
+ 
+}
+
+.slogan-color1{
+   text-align: center;
+   display: block;
+   width:100%;
+   color:#228B22;
+   margin:2vw 0 0 0;
+   padding: 0;
+}
+
+.slogan-color2{
+   text-align: center;
+   display: block;
+   width:100%;
+color: #8B0000;
+margin: 0;
+padding:2vw 0 0 0;
+}
+
+.heroPicture{
+ width: 99%;
+ height: auto;
+}
+
+
+.line{
+   top:60vh;
+   margin-top: -1vw;
+ align-self: end;
+ width:50vw;
+ border-right: 2px solid #9b1f21;
+ height: 10vh;
+ margin-bottom: 4em;
+ position: absolute;
+}
+
+.line::after{
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 14px 14px 0 14px;
+border-color: #9b1f21 transparent transparent transparent;
+right: -.9em;
+bottom: -3px;
+}
+
+
+
+.secondContainer{
+   margin-top: 6vh;
+   max-width:99%;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-around;
+   align-items:center;
+   margin-bottom:5vh;
+}
+
+.kindergarden{
+   width: 89vw;
+   height: 55vw;
+   
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column nowrap;
+   cursor: pointer;
+   margin-bottom:6vw;
+   padding:5% 5% 10% 15%;
+   background-image: url('../kg1.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   z-index: 100;
+   
+}
+
+.services{
+   width: 89vw;
+   height: 55vw;
+   
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column nowrap;
+   cursor:pointer;
+   margin-top:2vw;
+   background-image: url('../dom1.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   padding: 25% 5% 5% 10%;
+}
+
+.services, .kindergarden {
+   font-family: 'Caveat', cursive;
+   text-decoration: none;
+   color: #0E442F;
+}
+
+.kindergarden:hover, .services:hover{
+   text-decoration: none;
+   color:dodgerblue;
+   transition-duration: 500ms;
+}
+/***parallax images***/
+
+.farBackground, .nearBackground, .sun{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-width:100vw;
+  }
+  .sun{
+     top:0;
+     left:0;
+  }
+
+  .farBackground {
+    top:1%;
+    filter: brightness(1.1);
+
+}
+
+.nearBackground{
+    top: 40%;
+}
+
+/******************************
+M E D I A   Q U E R I E S ****/
+@media only screen and (max-width: 480px) and (orientation:portrait) {
+    /*nav and logo*/
+   .links {
+    margin:0 0.8em 0 0.8em;
+    font-size:1.0em;
+   }
+   
+   /*hero & slogan wrapper*/
+   article.cnt1{
+    /*margin-top:56px;*/
+   }
+  
+   
+
+   /*parallax: far background*/
+   .farBackground {
+      top:0;
+    }
+
+   .nearBackground{
+      top: 45vw;
+   }
+   .services, .kindergarden {
+      font-size: 2.5em;
+   }
+
+}
+
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+  /*nav and logo*/
+ .links {
+  margin:0 0.8em 0 0.8em;
+  font-size:1.0em;
+ }
+ /**A logotype - top left corner*/
+ 
+ /*top menu letters*/
+ 
+
+ /*parallax: far background*/
+ .farBackground {
+    top:-14vw;
+  }
+
+ .nearBackground{
+    top: 45vw;
+ }
+
+ .services, .kindergarden {
+   font-size: 2.5em;
+  }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 576px) {
+   .services, .kindergarden {
+      font-size: 3.0em;
+   }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+   .services, .kindergarden {
+      font-size: 3.5em;
+   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  
+ /*nav and logo*/
+  
+   /*******************************************/
+    /*nav and logo*/
+    .links {
+      margin:0 0.7em 0 0.7em;
+      font-size:1.6em;
+     }
+     
+     
+     
+  
+     /*parallax: far background*/
+     .farBackground {
+        top:-1vw;
+      }
+  
+     .nearBackground{
+        top: 45vw;
+     }
+
+     
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+   
+      /*nav and logo*/
+  
+   /*******************************************/
+    /*nav and logo*/
+       .links {
+        margin:0 0.7em 0 0.7em;
+        font-size:1.2em;
+       }
+       /**A logotype - top left corner*/
+       .logo{
+          width: 50px;
+          height: 50px;
+       }
+      
+    
+       /*parallax: far background*/
+       .farBackground {
+          top:-1vw;
+        }
+    
+       .nearBackground{
+          top: 45vw;
+       }
+
+      
+
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    /*nav and logo*/
+       .links {
+        margin:0 0.7em 0 0.7em;
+        font-size:1.4em;
+       }
+      
+       /*parallax: far background*/
+       .farBackground {
+          top:-10vw;
+        }
+    
+       .nearBackground{
+          top: 35vw;
+       }
+
+       .services, .kindergarden {
+         font-size: 4.5em;
+      }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    /*nav and logo*/
+    .links {
+      margin:0 0.7em 0 0.7em;
+      font-size:2.0em;
+     }
+     
+  
+     /*parallax: far background*/
+     .farBackground {
+        top:-25vw;
+      }
+  
+     .nearBackground{
+        top: 25vw;
+     }
+     .services, .kindergarden {
+      font-size: 4.5em;
+     }
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /*nav and logo*/
+       .links {
+        margin:0 0.7em 0 0.7em;
+        font-size:2.2em;
+       }
+      
+       /*parallax: far background*/
+       .farBackground {
+          top:-10vw;
+        }
+    
+       .nearBackground{
+          top: 25vw;
+       }
+
+       .services, .kindergarden {
+         font-size: 5.5em;
+      }
+
+    
+
+}
+
+@media only screen and (min-width: 1201px) {
+
+       /*nav and logo*/
+       .links {
+        margin:0 0.7em 0 0.7em;
+        font-size:2.5em;
+       }
+      
+       /*parallax: far background*/
+       .farBackground {
+          top:-10vw;
+        }
+    
+       .nearBackground{
+          top:25vw;
+       }
+
+       .services, .kindergarden {
+         font-size: 6.5em;
+      }
+}
+
