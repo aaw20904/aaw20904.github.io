@@ -1,0 +1,628 @@
+body{
+    width:100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+      background-image: url(../../templates/toys.svg);
+      background-position: center;
+      background-repeat: repeat-y;
+      background-size:contain;
+}
+
+
+.mainPageWrapper{
+   max-width:100vw;
+   display:block;
+      width:100%;
+      background: linear-gradient(180deg,   rgba(168, 251, 168, 0.8) 0%, rgba(240,250,160,0.8) 100% );
+      min-height: 99.9vh;
+}
+/****************
+classes for embedding an image ***/
+.object-fit_fill { 
+   object-fit: fill; 
+ }
+ .object-fit_contain { 
+    object-fit: contain; 
+ }
+
+
+ 
+ /********************/
+
+ .navBar {
+   width:95%;
+   display:flex;
+   flex-flow: row nowrap; 
+   justify-content: flex-end;
+   margin:2vw 2vw 2vw 0;
+    
+  }
+
+   .navItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Ubuntu', sans-serif;
+       text-decoration: none;
+      color:white;
+      font-size:1.3em;
+      cursor:pointer;
+      padding:0.5em 0.5em 0.5em 0.5em;
+      margin:0;
+      border:2px solid white;
+      
+   }
+
+
+   .navItem div{
+      font-family: 'Ubuntu', sans-serif;
+   }
+
+ 
+
+   .navItem:hover{
+      border:2px solid orange;
+      color:orange;
+      transition-duration: 500ms;
+   }
+
+   h1.titleItem{
+    display: block;
+    font-family: 'Lobster', serif;
+    font-size: 3em;
+    color:white;
+    margin:0;
+    text-align: center;
+    padding: 0; 
+    font-weight:bolder;
+    margin-bottom: 3vw;
+ }
+
+ h3.text{
+    display: block;
+   padding: 0;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 2.6em;
+   text-align: center;
+  
+   width:100%; 
+   margin: 1em 0 1em;
+}
+
+p.text{
+   font-family: 'Ubuntu', sans-serif;
+    margin:0 0 1em 0;
+    padding:0;
+    text-align: justify;
+ 
+   }
+   
+   p.text::first-letter{
+      margin-left:5vw;
+   }
+
+   em.highlight{
+      font-weight: bold;
+      font-style: normal;
+    
+   }
+
+   ul.text{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.6em;
+      list-style-image: url(../bulletList.svg);
+      margin:1vw 0 2vw 0;
+     
+      list-style-position: inside;
+   }
+   ul.text li{
+      margin-bottom: 0.4em;
+      margin-left:1em;
+   }
+
+
+.illustration_vector{
+   width:100%;
+   height:auto;
+   background-color: white;
+}
+
+
+article.topContainer{
+   width:100%;
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: space-between;
+   padding:0 0 1.5em 0;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   min-height: 50vw;
+   max-height:70vh;
+    
+ }
+
+ .line{
+   margin-left: 0;
+   width:20%;
+   height: 200px;
+   margin: 0 0 0 0;
+   position: absolute;
+   top:90%;
+   right:0;
+   z-index:1000;
+}
+
+
+
+ /******ref cont***************/
+ /****************************
+ *a flex bottom  container with links*/
+ article.refContainer{
+   display:flex;
+   flex-flow:row wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: space-around;
+   padding: 2vw 0 2vw 0;
+   /*background: #CCFFAA;*/
+   /*background: -webkit-linear-gradient(bottom, rgba(204, 255, 170, 0.5), rgba(255, 230, 235, 0.5));
+   background: -moz-linear-gradient(bottom, rgba(204, 255, 170, 0.5), rgba(255, 230, 235, 0.5));
+   background: linear-gradient(to top, rgba(204, 255, 170, 0.5), rgba(255, 230, 235, 0.5));*/
+}
+
+article.refContainer>a{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column nowrap;
+   border: 4px solid #abe9d2;
+   background-position: center center;
+   background-attachment:local;
+   background-repeat:no-repeat; 
+   /*background-attachment: fixed;*/
+   background-size: cover;
+   margin:3vw 3vw 3vw 3vw;
+   text-decoration: none;
+   -webkit-box-shadow: 9px 11px 25px -1px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 9px 11px 25px -1px rgba(34, 60, 80, 0.2);
+box-shadow: 9px 11px 25px -1px rgba(34, 60, 80, 0.2);
+}
+
+article.refContainer>a:nth-child(1){
+     background-image: url( ../items.svg);
+}
+
+article.refContainer>a:nth-child(2){
+   background-image: url(../items.svg);
+}
+
+ 
+article.refContainer>a:hover{
+   border:3px solid #ff8888;
+   transition-duration: 300ms;
+   cursor: pointer;
+}
+
+div.refItem{
+   display: inline-block;
+   margin:0;
+   padding:0;
+   font-family: 'Ubuntu', sans-serif;
+   text-decoration: none;
+}
+
+ 
+
+ 
+
+ /***************************************
+ ****************************************************
+  **MEDIA QUERIES */
+  @media only screen and (max-width: 480px) and (orientation:portrait) {
+
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 2.7em;
+       margin-bottom:2vw;
+    }
+ 
+     h3.text{
+       font-size: 1.3em;
+    }
+ 
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+ 
+   h3.text{
+       padding:2.5vw 3.7vw 2vw 3.7vw;
+     }
+ 
+     .topContainer{
+      background-image: url(../top_480.jpg);
+   }
+
+   article.refContainer>a{
+      margin:4vw 2vw 4vw 2vw;
+      width:300px;
+       height:300px;
+    }
+
+    div.refItem{
+      font-size: 1.6em;
+    }
+
+ 
+ 
+  }
+ 
+ 
+ @media only screen and (max-width: 480px) and (orientation: landscape) {
+  
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 2.7em;
+       margin-bottom:2vw;
+    }
+ 
+    h3.text{
+       font-size: 1.3em;
+    }
+    
+ 
+    p.text, ul.text{
+       font-size: 1.0m;
+       line-height: 1.5em;
+    }
+ 
+    
+    article.refContainer>a{
+      width:300px;
+      height:300px;
+   }
+
+   div.refItem{
+      font-size: 1.6em;
+    }
+      
+    .topContainer{
+      background-image: url(../top_480.jpg);
+   }
+     
+    
+ 
+ }
+ 
+ @media only screen and (min-width: 480px) and (max-width: 576px) and (orientation: landscape) {
+    
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 3.0em;
+       margin-bottom:2vw;
+    }
+ 
+    h3.text{
+       font-size: 1.2em;
+    }
+    
+   
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+ 
+    .topContainer{
+      background-image: url(../top_576.jpg);
+   }
+ 
+   article.refContainer>a{
+      width:300px;
+      height:300px;
+   }
+
+   div.refItem{
+      font-size: 1.6em;
+    }
+  
+  
+ }
+ 
+ @media only screen and (min-width: 480px) and (max-width: 576px) and (orientation:portrait){
+    
+    
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size:3.0em;
+       margin-bottom:2vw;
+    }
+ 
+    h3.text{
+       font-size: 1.2em;
+    }
+    
+  
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+ 
+    .topContainer{
+      background-image: url(../top_576.jpg);
+   }
+     
+   article.refContainer>a{
+      width:300px;
+      height:300px;
+   }
+
+   div.refItem{
+      font-size: 1.6em;
+    }
+
+ 
+    
+  
+ }
+ 
+ @media only screen and (min-width: 576px) and (max-width: 768px) and (orientation: landscape) {
+   
+    
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 3.0em;
+       margin-bottom:3vw;
+    }
+ 
+    h3.text{
+       font-size: 1.3em;
+    }
+    
+  
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+
+    .topContainer{
+      background-image: url(../top_768.jpg);
+   }
+ 
+   article.refContainer>a{
+      width:300px;
+      height:300px;
+   }
+
+   div.refItem{
+      font-size: 1.5em;
+    }
+     
+     
+ }
+ 
+ @media only screen and (min-width: 576px) and (max-width: 768px) and (orientation: portrait) {
+ 
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 3.0em;
+       margin-bottom:3vw;
+    }
+ 
+    h3.text{
+       font-size: 1.3em;
+    }
+    
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+ 
+  
+    .topContainer{
+      background-image: url(../top_768.jpg);
+   }
+
+   article.refContainer>a{
+      width:300px;
+      height:300px;
+   }
+
+   div.refItem{
+      font-size: 1.5em;
+    }
+
+   
+ 
+ }
+ 
+ 
+ 
+ @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 3.5em;
+       margin-bottom:4vw;
+    }
+ 
+    h3.text{
+       font-size: 1.3em;
+    }
+    
+    
+       
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+    
+    .topContainer{
+      background-image: url(../top_1024.jpg);
+   }
+
+   article.refContainer>a{
+      width:320px;
+      height:320px;
+    }
+ 
+    div.refItem{
+      font-size: 1.8em;
+    }
+ 
+ 
+ }
+ 
+ @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+   
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+    h1.titleItem{
+       font-size: 3.5em;
+       margin-bottom:4vw;
+    }
+ 
+    h3.text{
+       font-size: 1.3em;
+    }
+    
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+ 
+    .topContainer{
+      background-image: url(../top_1024.jpg);
+   }
+  
+   article.refContainer>a{
+      width:320px;
+      height:320px;
+     }
+   
+      div.refItem{
+         font-size: 1.8em;
+      }
+   
+ 
+ }
+ 
+ 
+ @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+     
+ 
+    .navItem div{
+       font-size:1.0em;
+     }
+ 
+     h1.titleItem{
+       font-size: 5em;
+    }
+     
+    h3.text{
+       font-size: 1.4em;
+    }
+    
+ 
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height: 1.5em;
+    }
+
+    .topContainer{
+      background-image: url(../top_1280.jpg);
+   }
+
+   article.refContainer>a{
+      width:350px;
+      height:350px;
+   }
+
+   div.refItem{
+      font-size: 2em;
+    }
+
+    
+    
+  
+ 
+   
+ }
+ 
+ @media only screen and (min-width: 1281px) {
+ 
+  
+    .navItem div{
+      font-size:1em;
+    }
+ 
+    h1.titleItem{
+       font-size: 6vw;
+       margin-bottom:10vw;
+    }
+ 
+    h3.text{
+       font-size: 1.4em;
+    }
+    
+ 
+    p.text, ul.text{
+       font-size: 1.0em;
+       line-height:1.5em;
+    }
+
+    .topContainer{
+      background-image: url(../top_1920.jpg);
+   }
+
+   section.infoText{
+      padding:2vw 8vw 2vw 8vw;
+   }
+
+   article.refContainer>a{
+      width:400px;
+      height:400px;
+   }
+
+   div.refItem{
+      font-size: 2.5em;
+    }
+
+ 
+    
+ }
+
+  
