@@ -15,7 +15,7 @@ self.addEventListener('fetch', function(event) {
         caches.open(cacheName)
         .then(function(cache) {
             //If we received an error response, we return the stale version from the cache:
-            if(response.status >= 500) {
+            if(response.status >= 400) {
                 cache.match(event.request)
                 .then(function(response) {
                     // Return stale version from cache
