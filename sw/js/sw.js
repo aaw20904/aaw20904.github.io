@@ -14,19 +14,19 @@ const CACHE_NAME = `${CACHE_ROOT}-v${SW_VERSION}`;
 
 var urlList = [
   '/',
-  '/app.webmanifest',
-  '/index.html',
-  '/css/main.css',
-  '/css/bootstrap.min.css',
-  '/img/cat_270.jpg',
-  '/img/cat_540.jpg',
-  '/img/cat_1080.jpg',
-  '/img/tip-200.png',
-  '/favicon-32x32.png',
-  '/favicon.ico',
-  '/js/main.js',
-  '/js/sw.js',
-  '/icons/ms-icon-144x144.png'
+  '/sw/app.webmanifest',
+  '/sw/index.html',
+  '/sw/css/main.css',
+  '/sw/css/bootstrap.min.css',
+  '/sw/img/cat_270.jpg',
+  '/sw/img/cat_540.jpg',
+  '/sw/img/cat_1080.jpg',
+  '/sw/img/tip-200.png',
+  '/sw/favicon-32x32.png',
+  '/sw/favicon.ico',
+  '/sw/js/main.js',
+  '/sw/js/sw.js',
+  '/sw/icons/ms-icon-144x144.png'
 
 ];
 
